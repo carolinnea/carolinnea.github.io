@@ -1,76 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Caroline's Portfolio</title>
-    <link rel="stylesheet" href="assets/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Caroline Albertini</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
     <header>
-        <div class="main-header">
-            <h1>Caroline's</h1>
-            <div class="buttons">
-                <a href="http://lattes.cnpq.br/7663871596990745" class="btn">Sobre</a>
-                <a href="#articles-section" class="btn">Artigos</a>
-                <a href="#projects-section" class="btn">Projetos</a>
-            </div>
+        <h1>
+            <span>Caroline Albertini</span><br>
+            <span class="subtitulo">conheça meu portfólio</span>
+        </h1>
+        <div class="btn-container">
+            <a href="#about-section" class="btn">Sobre</a>
+            <a href="#articles-section" class="btn">Artigos</a>
+            <a href="#projects-section" class="btn">Projetos</a>
         </div>
     </header>
+    
 
-    <main>
-        <!-- Apresentação -->
-        <section class="about-section" id="about-section">
-            <h2>Sobre</h2>
-            <article class="profile-card">
-                <div class="profile-text">
-                    <h3>Caroline Albertini Silva</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <img src="./assets/images/retrato_aleatorio.jpg" alt="Foto de Yorranan" class="profile-img">
-            </article>
-        </section>
+    <section id="about-section">
+        <div class="photo-container">
+            <img src="img/Caroline.png" alt="Caroline Albertini" class="photo">
+        </div>
+        <h2>Caroline Albertini Silva</h2>
+        <p>Jornalista, com atuação em Marketing. Estudo gestão de vendas e marketing. Possuo certificação em UX Writing pela EBAC, experiência em assessoria de imprensa, produção de conteúdo para os mais diversos meios, organização de eventos, comunicação interna e conhecimento em SEO. Sou uma pessoa responsável e prática. Busco entender claramente os objetivos do produto ou serviço, prezando pela experiência dos usuários.</p>
+    </section>
 
-        <!-- Artigos -->
-        <section class="articles-section" id="articles-section">
-            <h2>Artigos Publicados</h2>
-            <div class="article-card">
-                <img src="./assets/images/imagem_livro.jpg" alt="Artigo 1">
-                <div class="article-info">
-                    <h3>Artigo Científico 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="article-card">
-                <img src="./assets/images/imagem_livro.jpg" alt="Artigo 2">
-                <div class="article-info">
-                    <h3>Artigo Científico 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </section>
+    <section id="articles-section">
+        <h2>Meus Artigos Científicos</h2>
+        <ul>
+            <li><a href="https://portalintercom.org.br/anais/sul2018/resumos/R60-0129-1.pdf" target="_blank">Jornalismo no Youtube: uma nova prática profissional.</a></li>
+            <li><a href="https://portalintercom.org.br/anais/sul2019/resumos/R65-0325-1.pdf" target="_blank">Um telejornal de homens? Invisibilização e silenciamento das mulheres no Boa noite Paraná</a></li>
+        </ul>
+    </section>
 
-        <!-- Projetos -->
-        <section class="projects-section" id="projects-section">
-            <h2>Projetos</h2>
-            <div class="project-card">
-                <img src="./assets/images/imagem_livro.jpg" alt="Projeto 1">
-                <div class="project-info">
-                    <h3>Sistema de Gestão</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./assets/images/imagem_livro.jpg" alt="Projeto 2">
-                <div class="project-info">
-                    <h3>Aplicativo Mobile</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section id="projects-section">
+        <h2>Meus Projetos</h2>
+        <div class="project">
+            <h3>
+                <a href="https://github.com/carolinnea/testeprojeto1CAS" target="_blank">
+                AgroMonitor: solução tecnológica para uma agricultura eficiente
+                </a>
+                 <span class="project-logo">
+                    <img src="img/logo agromonitor png.png" alt="Logo Agromonitor">
+                 </span>
+            </h3>
+            <p>Software desenvolvido para o 1º semestre da disciplina de Projeto Integrador, do curso de Big Data no Agronegócio da Universidade Estadual do Centro-Oeste. O Software foi desenvolvido para ser uma solução prática, intuitiva e acessível, que busca promover uma agricultura mais eficiente e sustentável, impactando positivamente a produtividade e a qualidade das safras de soja.</p>
+            <ul>
+                <li>➡️ Pesquisar os sintomas presentes em sua lavoura de soja e receber possíveis diagnósticos gerados com base no "Manual de identificação de doenças de soja", da Embrapa Soja.</li>
+                <li>➡️ Receber a relação de insumos que podem usar na lavoura, bem como um comparativo de preços.</li>
+                <li>➡️ Manter-se atualizado com as últimas notícias publicadas no site da Embrapa.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="https://github.com/carolinnea/Projeto-Tabaco---P.O.O." target="_blank">
+                    Raiz Tech - Tecnologia Agrícola no cultivo do Tabaco
+                </a>
+                <span class="project-logo">
+                    <img src="img/logoraiztech.png" alt="Logo Raiz Tech">
+                </span>
+            </h3>
+            <p>Software desenvolvido para a disciplina de Programação Orientada a Objetivos, do curso de Big Data no Agronegócio da Universidade Estadual do Centro-Oeste.</p>
+            <ul>
+                <li>➡️ Aumento da qualidade das culturas de tabaco.</li>
+                <li>➡️ Redução do uso de recursos desnecessários.</li>
+                <li>➡️ Auxílio na tomada de decisão.</li>
+            </ul>
+        </div>
+        
+    </section>
 
     <footer>
-        <p>Contato: carolinealbertini@unicentro.br</p>
-        <div class="container"></div>
+        <div class="social-links">
+            <a href="https://github.com/carolinnea" target="_blank"><img src="img/github-mark-white.png" alt="GitHub"></a>
+            <span>GitHub</span> 
+            <a href="https://www.linkedin.com/in/caroline-albertini-097135189/" target="_blank"><img src="img/logolinkedin.png" alt="LinkedIn"></a>
+            <span>LinkedIn</span>
+        </div>
+        <p>Contato: <a href="mailto:carolinealbertini@unicentro.br">carolinealbertini@unicentro.br</a></p>
     </footer>
+
 </body>
 </html>
