@@ -1,142 +1,148 @@
-/* Estilo geral da página*/
+
 body {
-    background: #f4f4f4; /* Cor de fundo da página */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0; /* Remove margens padrão do body */
-    font-family: 'Arial', sans-serif;
+    background-color: #d3d3d3; 
+    font-family: Arial, sans-serif;
+    color: #800000; 
+    margin: 5;
+    padding: 5;
 }
 
-main {
-    margin: 5vw; /* Margem baseada na largura da viewport */
-}
-
-/* Estilização para o título principal */
-.main-header h1 {
-    font-size: 8vw; /* Ajusta o tamanho do texto para ocupar grande parte da largura da tela */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    margin: 0; /* Remove margens padrão */
-    padding: 20px 0; /* Adiciona espaçamento interno */
-    color: #693232; /* Cor do texto */
-    font-weight: bold; /* Deixa o texto em negrito */
-    line-height: 1.2; /* Ajusta o espaçamento entre linhas */
-}
-
-.main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Faz a div ocupar toda a altura da tela */
+/* Cabeçalho */
+header {
     text-align: center;
+    margin-top: 50px;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2em;
-    margin: 2rem 0;
-    color: #333;
+h1 {
+    font-size: 2.5em;
 }
 
-/* Seção Sobre */
-.profile-card {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 3rem;
-}
-
-.profile-img {
-    border-radius: 20px;
-    object-fit: cover;
-    max-width: 200px;
-    width: 90%;
-}
-
-/* Cards de Artigos e Projetos */
-.article-card,
-.project-card {
-    display: flex;
-    gap: 1.5rem;
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.article-card img,
-.project-card img {
-    object-fit: cover;
-    border-radius: 5px;
-    max-height: 200px
-}
-
-.article-info,
-.project-info {
-    flex: 1;
-}
-
-.buttons {
-    margin-top: 10px;
+/* Botões */
+.btn-container {
+    margin-top: 20px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
+    text-decoration: none;
+    background-color: #800000; 
     color: white;
-    background-color: #007BFF;
+    padding: 10px 20px;
+    margin: 10px;
     border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #a52a2a; 
 }
 
+/* Foto */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #800000; 
+}
+
+/* Seções */
+section {
+    margin: 50px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+    
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Rodapé */
 footer {
-    background: #333;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1.5rem;
-    margin-top: auto;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-footer p {
-    margin: 0;
+.social-links a {
+    margin: 0 10px;
 }
 
-/* Responsável pela responsividade, na menor tela */
-@media (max-width: 768px) {
-    .profile-card {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .article-card,
-    .project-card {
-        flex-direction: column;
-    }
-    
-    .main-header {
-        font-size: 6em;
-    }
-    
-    main {
-        margin: 3vw;
-    }
+.social-links img {
+    width: 30px;
+    height: 30px;
 }
 
-/* Ajuste para telas muito pequenas */
-@media (max-width: 480px) {
-    main {
-        margin: 2vw; /* Margem ainda menor para dispositivos muito pequenos */
-    }
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.subtitulo {
+    font-size: 0.6em; 
+    font-weight: normal; /* tira o bold */
+    display: block; /* força ficar embaixo, tipo uma linha só */
+    margin-top: 10px; 
+}
+
+#articles-section ul li a {
+    color: #800000; 
+    text-decoration: none; /*para tirar o sublinhado. o underline volta o sublinhado */
+}
+
+#articles-section ul li a:hover {
+    color: #a52a2a; 
+    text-decoration: underline; 
+}
+
+.project h3 {
+    display: flex;          /*flexbox alinha e facilita a distribuiçao dos intens*/
+    align-items: center;    
+    justify-content: flex-start; 
+}
+
+.project h3 a {
+    text-decoration: none;  
+    color: #800000;         
+    font-size: 1.5em;       
+}
+
+.project-logo img {
+    width: 100px;            
+    height: auto;           
+    margin-left: 10px;      
 }
