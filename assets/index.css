@@ -3,19 +3,24 @@ body {
     background-color: #d3d3d3; 
     font-family: Arial, sans-serif;
     color: #800000; 
-    margin: 0 auto;              /* centraliza horizontalmente */
-    padding: 0 50px;             /* espaço lateral interno */
-    max-width: 1000px;           /* largura máxima do site */
+    margin: 0;              /* centraliza horizontalmente */
+    padding: 0;
 }
 
-/* Cabeçalho */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho ocupa toda a largura */
 header {
     text-align: center;
-    margin-top: 20px;
-    background-color: #800000; 
-    color: #d3d3d3; 
-    padding: 40px 20px; /* espaço interno para o box */
-    
+    background-color: #800000;
+    color: #d3d3d3;
+    padding: 40px 20px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 
@@ -102,6 +107,8 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .social-links a {
