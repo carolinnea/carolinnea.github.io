@@ -58,7 +58,7 @@ header h1 {
 .photo-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .photo {
@@ -70,7 +70,7 @@ header h1 {
 
 /* Seções */
 section {
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 h2 {
