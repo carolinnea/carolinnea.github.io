@@ -10,11 +10,12 @@ body {
 /* Cabeçalho */
 header {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 h1 {
     font-size: 2.5em;
+    font-style: italic;
 }
 
 /* Botões */
@@ -51,12 +52,12 @@ h1 {
 
 /* Seções */
 section {
-    margin: 50px 20px;
+    margin: 50px 50px;
 }
 
 h2 {
     font-size: 2em;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -146,3 +147,12 @@ footer p a:hover {
     height: auto;           
     margin-left: 10px;      
 }
+
+/*linha abaixo dos botões*/
+hr {
+    border: none;
+    height: 2px;
+    background-color: #800000;
+    margin: 40px 0;
+}
+
