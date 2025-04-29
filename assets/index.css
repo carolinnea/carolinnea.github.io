@@ -3,18 +3,19 @@ body {
     background-color: #d3d3d3; 
     font-family: Arial, sans-serif;
     color: #800000; 
-    margin: 20;
-    padding: 20;
+    margin: 0 auto;              /* centraliza horizontalmente */
+    padding: 0 50px;             /* espaço lateral interno */
+    max-width: 1000px;           /* largura máxima do site */
 }
 
 /* Cabeçalho */
 header {
     text-align: center;
     margin-top: 20px;
-    background-color: #800000; /* fundo bordô */
-    color: #d3d3d3; /* texto cinza */
+    background-color: #800000; 
+    color: #d3d3d3; 
     padding: 40px 20px; /* espaço interno para o box */
-    border-radius: 10px; /* cantos arredondados (opcional) */
+    
 }
 
 
@@ -30,15 +31,18 @@ h1 {
 
 .btn {
     text-decoration: none;
-    background-color: #800000; 
-    color: white;
+    background-color: #d3d3d3; /* fundo cinza */
+    color: #800000; 
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
+    font-weight: bold;
+    border: none;
 }
 
 .btn:hover {
-    background-color: #a52a2a; 
+    background-color: #bcbcbc; 
+    color: #800000;
 }
 
 /* Foto */
