@@ -1,35 +1,39 @@
-
 body {
     background-color: #d3d3d3;
     font-family: Arial, sans-serif;
     color: #800000;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Cabeçalho */
+/* Cabeçalho ocupa toda a largura */
 header {
     text-align: center;
-    margin-top: 20px;
     background-color: #800000;
     color: #d3d3d3;
     padding: 40px 20px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
-h1 {
-    font-size: 2.5em;
-    font-style: normal; /* Garante que o nome "Caroline Albertini" não fique em itálico */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+
 }
 
-h1 span.subtitulo {
-    font-style: italic; /* Apenas a frase "Jornalista e graduanda em Big Data" estará em itálico */
-}
-
-.subtitulo {
-    font-size: 0.6em;
-    font-weight: normal;
+header .subtitulo {
+    font-style: italic;
+    font-size: 1rem;
     display: block;
-    margin-top: 10px;
+    margin-top: 0.5rem;
 }
 
 /* Botões */
@@ -39,7 +43,7 @@ h1 span.subtitulo {
 
 .btn {
     text-decoration: none;
-    background-color: #d3d3d3; /* fundo cinza */
+    background-color: #d3d3d3;
     color: #800000;
     padding: 10px 20px;
     margin: 10px;
@@ -69,7 +73,7 @@ h1 span.subtitulo {
 
 /* Seções */
 section {
-    margin: 50px 50px;
+    margin: 50px 0;
 }
 
 h2 {
@@ -99,13 +103,15 @@ ul li {
     text-decoration: underline;
 }
 
-/* Rodapé */
+/* Rodapé ocupa toda a largura */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .social-links a {
@@ -115,6 +121,7 @@ footer {
 .social-links img {
     width: 30px;
     height: 30px;
+    vertical-align: middle;
 }
 
 footer p a {
@@ -124,6 +131,13 @@ footer p a {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+.subtitulo {
+    font-size: 0.6em;
+    font-weight: normal;
+    display: block;
+    margin-top: 10px;
 }
 
 #articles-section ul li a {
@@ -140,6 +154,12 @@ footer p a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.project h3 a {
+    text-decoration: none;
+    color: #800000;
+    font-size: 1.5em;
 }
 
 .project-logo img {
